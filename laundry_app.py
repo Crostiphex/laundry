@@ -63,7 +63,7 @@ def monitor_machine(person):
         global count_average
         global count
         status = port.read()
-        active = open(r"C:\Users\Christoper\Desktop\active.txt", 'a')
+        active = open('active.txt', 'a')
         if count < 149:
             if status == "A":
                 active.write("in use" + '\n')
